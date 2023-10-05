@@ -1,0 +1,19 @@
+
+
+
+@keyframes blink{
+
+    0% {opacity: 1; filter:brightness(100%)}
+    50% {opacity: 0.5; filter: grayscale(30%) sepia(24%) blur(2px) brightness(130%) saturate(279%) contrast(122%);
+        -webkit-filter: grayscale(30%) sepia(24%) blur(2px) brightness(130%) saturate(279%) contrast(122%);
+        -moz-filter: grayscale(30%) sepia(24%) blur(2px) brightness(130%) saturate(279%) contrast(122%);}
+    100% {opacity: 1; filter: brightness(100%)}
+
+}
+
+.blink{
+
+    animation: blink 0.2s;
+    animation-iteration-count: 3;
+
+}

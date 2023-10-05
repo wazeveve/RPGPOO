@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas de Personagens</title>
+    <!-- Inclua o CSS do Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<!--<audio controls autoplay loop>
+    <source src="8bitrpg.mp3" type="audio/mpeg">
+    Seu navegador não suporta a reprodução de áudio.
+  </audio>
+-->
+
+<body class="bg-cover bg-center h-screen" style="background-image: url('background.jpg');">
+    
+
+<div class="flex justify-center">
+
+   <!-- Card 1 -->
+   <div class="bg-white bg-opacity-60 rounded-lg shadow-lg p-4 m-4">
+    <img src="warrior.jpg" alt="Personagem 1" class="w-32 h-32 mx-auto  rounded-lg" id="imgGuerreiro">
+    <h2 class="text-xl font-semibold mt-2">Guerreiro</h2>
+    <button  id="infoGuerreiro" class="bg-blue-500 text-white px-4 py-2 mt-2 mr-2 rounded-lg">Exibir Info</button>
+    <button class="bg-red-500 text-white px-4 py-2 mt-2 rounded-lg" id="ataqueGuerreiro">Atacar</button>
+    <div class="mt-4">
+        <label class="block text-sm font-semibold">Barra de Vida</label>
+        <div class="bg-green-200 h-4 w-full">
+            <div class="bg-green-500 h-4 w-1/2"></div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Card 2 -->
+    <div class="bg-white bg-opacity-60 rounded-lg shadow-lg p-4 m-4">
+        <img src="mage.png" alt="Personagem 2" class="w-32 h-32 mx-auto  rounded-lg" id="imgMago">
+        <h2 class="text-xl font-semibold mt-2">Mago</h2>
+        <button class="bg-blue-500 text-white px-4 py-2 mt-2 mr-2 rounded-lg" id="infoMago">Exibir Info</button>
+        <button class="bg-red-500 text-white px-4 py-2 mt-2 rounded-lg" id="ataqueMago">Atacar</button>
+        <div class="mt-4">
+            <label class="block text-sm font-semibold">Barra de Vida</label>
+            <div class="bg-green-200 h-4 w-full">
+                <div class="bg-green-500 h-4 w-3/4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white bg-opacity-60 rounded-lg shadow-lg p-4 m-4">
+        <img src="archer.jpg" alt="Personagem 3" class="w-32 h-32 mx-auto  rounded-lg" id="imgArqueira">
+        <h2 class="text-xl font-semibold mt-2">Arqueira</h2>
+        <button class="bg-blue-500 text-white px-4 py-2 mt-2 mr-2 rounded-lg" id="infoArqueira">Exibir Info</button>
+        <button class="bg-red-500 text-white px-4 py-2 mt-2 rounded-lg" id="ataqueArqueira">Atacar</button>
+        <div class="mt-4">
+            <label class="block text-sm font-semibold">Barra de Vida</label>
+            <div class="bg-green-200 h-4 w-full">
+                <div class="bg-green-500 h-4 w-1/3"></div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    
+
+    <div class="flex justify-center p-4 m-4">
+<div class="bg-white bg-opacity-60 rounded-lg shadow-lg p-4 m-4">
+    <br><br>
+        <img src="king.gif" alt="Personagem 4" class="w-40 h-40 mx-auto rounded-lg" id="imgInimigo">
+        <h2 class="text-xl font-semibold mt-2 justify-center">Inimigo</h2>
+        <button id="enemyAtkBt" class="bg-red-500 text-white px-4 py-2 mt-2 rounded-lg">ATACAR</button>
+        <button id="enemyInfoBt" class="bg-blue-500 text-white px-4 py-2 mt-2 mr-2 rounded-lg">INFO</button>
+        <div class="mt-4">
+            <label class="block text-sm font-semibold">Barra de Vida</label>
+            <div class="bg-green-200 h-4 w-full">
+                <div class="bg-green-500 h-4 w-full"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex justify-center p-4 m-4">
+    <div class="bg-white bg-opacity-75 rounded-lg shadow-lg p-4 m-4">
+<div id="idInfo"></div>
+        <p id="idAtaque"></p>
+        <p id="idDano"></p>
+    </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
